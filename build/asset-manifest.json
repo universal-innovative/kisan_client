@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ef945a09.css",
+    "main.js": "/static/js/main.bd0024ca.js",
+    "static/js/787.826f6875.chunk.js": "/static/js/787.826f6875.chunk.js",
+    "static/media/barley.jpg": "/static/media/barley.e9970742dd6fdeb4baf7.jpg",
+    "static/media/logo.png": "/static/media/logo.079075694bee14120984.png",
+    "index.html": "/index.html",
+    "main.ef945a09.css.map": "/static/css/main.ef945a09.css.map",
+    "main.bd0024ca.js.map": "/static/js/main.bd0024ca.js.map",
+    "787.826f6875.chunk.js.map": "/static/js/787.826f6875.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef945a09.css",
+    "static/js/main.bd0024ca.js"
+  ]
+}
