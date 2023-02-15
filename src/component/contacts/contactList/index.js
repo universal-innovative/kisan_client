@@ -10,7 +10,10 @@ const CommentsList = () => {
   const fetchData = async () => {
     try {
       setState({ ...state, loading: true });
-      let response = await fetch("http://localhost:8000/api/contacts/list");
+
+      let response = await fetch(
+        "https://kisan-assignment-server.onrender.com/api/contacts/list"
+      );
       const data = await response.json();
       setState({ ...state, loading: false, contacts: data });
     } catch (err) {
@@ -26,7 +29,7 @@ const CommentsList = () => {
     const data = { name: el?.name, recipient: el.phone };
     try {
       const response = await fetch(
-        "http://localhost:8000/api/message/send",
+        "https://kisan-assignment-server.onrender.com/api/message/send",
 
         {
           method: "POST",

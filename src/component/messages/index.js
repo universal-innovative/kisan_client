@@ -10,7 +10,9 @@ const CommentsList = () => {
   const fetchData = async () => {
     try {
       setState({ ...state, loading: true });
-      let response = await fetch("http://localhost:8000/api/messages/list");
+      let response = await fetch(
+        "https://kisan-assignment-server.onrender.com/api/messages/list"
+      );
       const data = await response.json();
       setState({ ...state, loading: false, messages: data });
     } catch (err) {

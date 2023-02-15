@@ -27,10 +27,14 @@ const LandingForm = () => {
       data.append("name", state.name);
       data.append("phone", state.phone);
       data.append("image", state.image);
-      const response = await fetch("http://localhost:8000/api/contact/create", {
-        method: "post",
-        body: data,
-      });
+
+      const response = await fetch(
+        "https://kisan-assignment-server.onrender.com/api/contact/create",
+        {
+          method: "post",
+          body: data,
+        }
+      );
       if (response.status === 200) {
         setState({
           ...state,
