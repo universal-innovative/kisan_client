@@ -1,0 +1,105 @@
+.card {
+  width: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 20px;
+  background: white;
+  margin-top: 50px;
+  transition: all 0.2s;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
+  transform: translate(-5px, -5px);
+}
+
+.card:hover .icon svg {
+  animation: iconjln 1s;
+}
+
+.img-cover {
+  position: relative;
+}
+
+.card img {
+  width: 300px;
+  height: 300px;
+  object-fit: fill;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  padding: 25px;
+  right: 0;
+  border-bottom-left-radius: 20px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.message {
+  padding: 1.5em;
+  font-family: "Poppins", sans-serif;
+}
+.message h1 {
+  display: inline;
+}
+.tmessage {
+  margin-bottom: 40px;
+  width: 100%;
+  height: 50px;
+  overflow: auto;
+}
+
+.message button {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  gap: 0.5rem;
+  background-color: dodgerblue;
+  padding: 15px 25px;
+  color: white;
+  border-radius: 15px;
+
+  text-align: center;
+  transition: all 0.2s;
+}
+.message button:hover {
+  background-color: SteelBlue;
+}
+.message button:hover svg {
+  animation: iconjln 1s;
+}
+
+@keyframes iconjln {
+  0%,
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  70% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+.contact-list-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-flow: row dense;
+  justify-content: center;
+
+  grid-gap: 0.5rem;
+}
+.contact-list-container {
+  max-width: 100vw;
+  overflow-x: auto;
+}

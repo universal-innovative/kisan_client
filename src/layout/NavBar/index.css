@@ -1,0 +1,38 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+
+  align-items: center;
+  background-color: #ffffff;
+  width: 100%;
+  z-index: 999;
+}
+.navbar-ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 20%;
+  margin-left: auto;
+  width: 100%;
+
+  z-index: 999;
+}
+.navbar-li button {
+  width: 5rem;
+  height: 2rem;
+  border: none;
+  cursor: pointer;
+}
+.nav-icon {
+  height: 2rem;
+  width: 3rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.nav-icon img {
+  height: 100%;
+  width: 100%;
+}
